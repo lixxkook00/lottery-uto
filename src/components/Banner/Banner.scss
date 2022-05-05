@@ -1,0 +1,93 @@
+@import "../../../public/scss/_variable.scss";
+@import "../../../public/scss/_utils.scss";
+
+.banner{
+    height: 332px;
+    border-radius: 1.25rem;
+    background-color: $--rssf2i;
+    background-image: url(../../../public/assets/img/banner.5b92f69a.png);
+    background-size: auto 100%;
+    background-position: center center;
+
+    &-wrap{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 88%;
+        padding: 0.9375rem;
+        position: relative;
+        background-image: url(../../../public/assets/img/banner_1.838b0b15.png),url(../../../public/assets/img/banner_2.8d6d7d1c.png);
+        background-position: left bottom,right bottom;
+        background-size: 40% auto,40% auto;
+        background-repeat: no-repeat;
+
+        & .countdown{
+            span{
+                color: #ffbf39;
+                height: 1.25rem;
+                line-height: 1.25rem;
+            }
+            h2{
+                color: #fff;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                margin-top: 0.1875rem;
+                font-weight: 800;
+                -webkit-letter-spacing: 2px;
+                -moz-letter-spacing: 2px;
+                -ms-letter-spacing: 2px;
+                letter-spacing: 2px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+        }
+
+        & .btn-buy{
+            display: flex;
+            margin: 1rem auto 0;
+            width: 13.5rem;
+            color: #f5f6f7;
+            box-shadow: 0 4px 8px rgb(29 34 37 / 10%);
+            background-color: #f19511;
+            background-image: conic-gradient(from 1turn,#f19511,#f6c722);
+            border-radius: 6.25rem;
+            height: 3rem;
+            font-weight: 700;
+            cursor: pointer;
+
+            &-wrap{
+                margin: auto;
+            }
+
+            &-title{
+                color: #f5f6f7;
+                font-weight: 700;
+                font-size: .875rem;
+            }
+
+            &-sub{
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &-decs{
+        display: flex;
+        justify-content: space-between;
+        color: $--1k9tf55;
+        font-size: .75rem;
+        padding: 5px 0.9375rem 0;
+    }
+
+}

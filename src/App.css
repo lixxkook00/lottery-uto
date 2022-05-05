@@ -1,5 +1,12 @@
+html{
+  font-size: 100%;
+  background-color: #24262B;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: #24262B;
 }
 
 .App-logo {
@@ -35,4 +42,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+img{
+  height: 100%;
+}
+
+button{
+  border: none;
+  padding: 0;
+  user-select: none;
+  font-size: .875rem;
+  background-color: transparent;
 }
