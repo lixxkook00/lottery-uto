@@ -7,7 +7,7 @@ export default function Banner() {
         <div className="banner-wrap">
             <div className="banner-wrap-content">
                 <div className="countdown">
-                    <span>Next Draw in</span>
+                    <span >Next Draw in</span>
                     <h2>00h:00m:00s</h2>
                 </div>
                 <div className="btn-buy">

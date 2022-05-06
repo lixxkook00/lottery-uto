@@ -1,11 +1,12 @@
 @import "../../../public/scss/_variable.scss";
 @import "../../../public/scss/_utils.scss";
+@import "../../../public/scss/_animation.scss";
 
 .banner{
     height: 332px;
     border-radius: 1.25rem;
     background-color: $--rssf2i;
-    background-image: url(../../../public/assets/img/banner.5b92f69a.png);
+    background-image: url(../../../public/assets/img/banner.jpg);
     background-size: auto 100%;
     background-position: center center;
 
@@ -21,7 +22,15 @@
         background-size: 40% auto,40% auto;
         background-repeat: no-repeat;
 
+        &-content{
+            background-color:rgba(0,0,0,0.4);
+            padding: 10px;
+            border-radius: 10px;
+            animation: 1.5s linear 1s infinite alternate breathing;
+        }
+
         & .countdown{
+            font-weight: 500;
             span{
                 color: #ffbf39;
                 height: 1.25rem;
@@ -85,9 +94,13 @@
     &-decs{
         display: flex;
         justify-content: space-between;
-        color: $--1k9tf55;
+        color: #fff;
+        font-weight: 500;
         font-size: .75rem;
-        padding: 5px 0.9375rem 0;
+        background-color:rgba(0,0,0,0.5);
+        padding: 6px 4px;
+        margin: 0 10px;
+        border-radius: 10px;
     }
 
 }
