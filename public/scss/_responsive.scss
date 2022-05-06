@@ -196,6 +196,15 @@
     .tabs-nav{
         height: 20px !important;
     }
+
+    .banner-decs{
+        .banner-decs-sold,.banner-decs-winner{
+            width: 50%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
 }
 
 /* Tablet to PC low resolution */
