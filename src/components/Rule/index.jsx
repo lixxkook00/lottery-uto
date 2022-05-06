@@ -228,7 +228,7 @@ export default function Rule() {
                     </td>
                 </tr>
                <tr className="normal-prize">
-                    <td className="matches">1 numbers</td>
+                    <td className="matches white-text">1 numbers</td>
                     <td>
                         <Ticket list={listBall[5]}/>
                     </td>

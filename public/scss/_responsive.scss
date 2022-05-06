@@ -1,0 +1,226 @@
+/* Mobile & Tablet */
+
+@media (max-width: 1023px) {
+    .hidden-t {
+        display: none !important;
+    }
+}
+
+// Motherfucking Iphone 5S
+@media (max-width: 321px) {
+}
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    .header-left-input{
+        margin-left: 0 !important;
+        flex: 1 !important;
+        width: unset !important;
+        margin-right: 10px !important;
+    }
+
+    .right-wrap{
+        margin-top: 20px;
+    }
+
+    .cart{
+        height: 14rem;
+    }
+}
+
+/* Mobile Only */
+
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none;
+    }
+
+    .header{
+        display:flex;
+        flex-wrap: wrap;
+
+        &-left{
+            width: 100%;
+        }
+    }
+
+    .g18qg53k{
+        flex-wrap: wrap;
+
+        .balance{
+            flex: 1;
+            width: 100%;
+            margin-right: 2px;
+        }
+
+        .btn.swap{
+            margin-left: 8px;
+        }
+
+        .btn{
+            flex: 1;
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    }
+
+    .right-wrap{
+        margin: 10px;
+    }
+
+    .vebodtg.draw{
+        width: 7rem !important;
+        height: 1.625rem !important;
+        padding: 0 0.25rem !important;
+    }
+    .ball {
+        width: 13px !important;
+        height: 13px !important;
+        margin: 0 0.15rem !important;
+    }
+
+    .prize{
+        font-size: 12px;
+    }
+    
+    .matches{
+        font-size: 10px !important;
+    }
+
+    .rule .ui-table {
+        th ,td {
+            padding: 0.2rem 0.875rem !important;
+            font-size: 12px !important;
+            font-weight: 500;
+        }
+
+        th:nth-child(2){
+            text-align: center;
+        }
+    }
+
+    .tabs-navs{
+        width: 100% !important;
+    }
+
+    .rule{
+        padding: 10px !important;
+    }
+
+    .tabs-view .right-wrap{
+        margin: 0 !important;
+    }
+
+    .header-left-input{
+        margin: 10px 0 !important;
+    }
+
+    .header{
+        margin-bottom: 5px !important;
+        flex-direction: column-reverse;
+
+        &-right{
+            width: 100%;
+        }
+    }
+    .avatar{
+        display: none !important;
+    }
+
+    .win-ticket{
+        .ticket-win{
+            width: 100%;
+            justify-content: center !important;
+        }
+        .ticket-win .vebodtg.win.draw{
+            width: 96% !important;
+            height: 50px !important;
+            margin: auto;
+
+            .numbers{
+                flex: 1;
+                justify-content: space-between;
+                margin-left: 24% !important;
+            }
+
+            .ball{
+                height: 33px !important;
+                width: 33px !important;
+                // margin-left: 6px !important;
+            }
+        }
+        .numbers{
+            margin-left: 0 !important;
+        }
+    }
+
+    .history{
+        font-size: 10px !important;
+
+        .top{
+            flex-direction: column !important;
+        }
+
+        th{
+            width: 10px !important;
+            min-width: 10px !important;
+            max-width: 10px !important;
+            padding: 4px !important;
+        }
+
+        th:first-child{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        td{
+            padding: 4px !important;
+        }
+        .user-info{
+            width: 18px !important;
+            min-width: 18px !important;
+            max-width: 18px !important;
+            margin-right: 4px !important;
+        }
+        .ball div{
+            font-size: 8px !important;
+        }
+    }
+
+    .tabs-nav{
+        height: 20px !important;
+    }
+}
+
+/* Tablet to PC low resolution */
+
+@media (min-width: 985px) and (max-width: 1200px) {
+    .header-left-input{
+        margin-left: 0;
+        flex: 1 !important;
+        margin-right: 10px !important;
+    }
+}
+
+/* > PC low resolution */
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
+
+/* PC only */
+
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+}
+
+// PC
+@media (min-width: 1200px) {
+}

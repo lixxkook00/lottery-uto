@@ -33,7 +33,7 @@ const cartPlayList = [
 ]
 
 export default function Lottery() {
-  const [idActive,setIdActive] = useState(0)
+  const [idActive,setIdActive] = useState(2)
 
   return (
     <div className="container">
@@ -100,7 +100,7 @@ export default function Lottery() {
               You can use BCL to redeem lottery tickets in the Lottery at any time, 1 BCL = 1 lottery ticket.
             </span>
 
-            <a className="green-text pl-10">
+            <a className="btn-detail green-text pl-10">
               Detail
             </a>
           </div>
