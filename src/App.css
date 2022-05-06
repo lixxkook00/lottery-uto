@@ -4,8 +4,11 @@ html{
   box-sizing: border-box;
 }
 
+body{
+  color: #dfe3e6;
+}
+
 .App {
-  text-align: center;
   background-color: #24262B;
 }
 
@@ -45,12 +48,52 @@ html{
 }
 img{
   height: 100%;
+  width: auto;
+  /* z-index: 2; */
 }
 
-button{
+button {
   border: none;
   padding: 0;
   user-select: none;
+  cursor: pointer;
   font-size: .875rem;
   background-color: transparent;
+  appearance: auto;
 }
+
+button:focus {
+    outline: none;
+}
+
+.ui-button {
+    width: 8.9375rem;
+    --3xr1hu: rgba(107,113,128,.8);
+    display: block;
+    border-radius: 6.25rem;
+    height: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.36,.66,.04,1);
+    -webkit-transition: transform .2s cubic-bezier(.36,.66,.04,1);
+    transition: transform .2s cubic-bezier(.36,.66,.04,1);
+}
+
+.ui-button.s-conic4 {
+    color: #f5f6f7;
+    box-shadow: 0 4px 8px rgb(29 34 37 / 10%);
+    background-color: #f19511;
+    background-image: conic-gradient(from 1turn,#f19511,#f6c722);
+}
+
+a{
+  color: unset;
+  transition: all 0.2 ease-in-out;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #43b309;
+  font-weight: 700;
+}
+

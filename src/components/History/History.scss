@@ -1,0 +1,139 @@
+@import "../../../public/scss/_utils.scss";
+
+
+.history{
+    // padding: 1.5rem 0;
+    padding-bottom: 2px;
+    border-radius: 1.25rem;
+
+    .v1tetjd0 {
+        --16jk2gf: rgba(151,151,151,.2);
+        --1iowfn5: rgba(152,167,181,.2);
+        --3ju67v: rgba(233,234,242,.3);
+        --g52yms: #000;
+        --1od8i8n: rgba(233,234,242,.8);
+        --1k5oqmp: #9aa1a9;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px var(--16jk2gf);
+        height: 4rem;
+        padding: 0 1.125rem;
+    }
+
+    .win-ticket{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &-wrap{
+        background-color: #18191c;
+        border-radius: 1.25rem;
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        border: solid 1px transparent;
+        margin: 18px;
+        margin-bottom: 1.125rem;
+
+        .top{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+        }
+
+        .sub-tit {
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+
+    table {
+        width: 100%;
+        background-color:#18191c;
+        border-radius: 1.25rem;
+        padding: 0.25rem 0.75rem 0.5625rem;
+
+
+        th {
+            color: rgba(153,164,176,.8);
+            white-space: nowrap;
+            padding-bottom: 0.5625rem;
+            overflow: hidden;
+            text-align: center;
+            padding: 0.875rem 0.75rem;
+        }
+
+        th:first-child {
+            text-align: left;
+            padding-left: 22px;
+        }
+
+        th:last-child {
+            text-align: right;
+            padding-right: 22px;
+        }
+
+        td{
+            text-align: center;
+            padding: 0.5625rem 0.75rem;
+        }
+
+        td:first-child {
+            text-align: left;
+            padding-left: 22px;
+        }
+
+        td:last-child {
+            text-align: right;
+            padding-right: 22px;
+        }
+
+        .nums-wrap{
+            display: flex;
+            justify-content: center;
+        }
+
+        .nums-inner{
+            display: flex;
+            align-items: center;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+    }
+
+    .user-info{
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 2.625rem;
+        height: 2.625rem;
+        margin-right: 1rem;
+        border-radius:50%;
+        overflow: hidden;
+    }
+}

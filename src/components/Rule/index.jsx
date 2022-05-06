@@ -30,13 +30,143 @@ const listBall = [
             active : true
         },
     ],
+    [
+        {
+            value: "",
+            active : true
+        },
+        {
+            value:"",
+            active : true
+        },
+        {
+            value: "",
+            active : true
+        },
+        {
+            value: "",
+            active : true
+        },
+        {
+            value: "",
+            active : true
+        },
+        {
+            value: "",
+            active : false
+        },
+    ],
+    [
+        {
+            value: "",
+            active : true
+        },
+        {
+            value:"",
+            active : true
+        },
+        {
+            value: "",
+            active : true
+        },
+        {
+            value: "",
+            active : true
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+    ],
+    [
+        {
+            value: "",
+            active : true
+        },
+        {
+            value:"",
+            active : true
+        },
+        {
+            value: "",
+            active : true
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+    ],
+    [
+        {
+            value: "",
+            active : true
+        },
+        {
+            value:"",
+            active : true
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+    ],
+    [
+        {
+            value: "",
+            active : true
+        },
+        {
+            value:"",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+        {
+            value: "",
+            active : false
+        },
+    ],
 ]
 
 export default function Rule() {
   return (
     <div className="rule mb-40">
         {/* table */}
-        <table class="ui-table">
+        <table className="ui-table">
             <thead>
                 <tr>
                     <th>Matches</th>
@@ -45,8 +175,8 @@ export default function Rule() {
                 </tr>
             </thead>
             <tbody>
-                <tr class="big-prize">
-                    <td class="matches">
+                <tr className="big-prize">
+                    <td className="matches">
                         <span className="green-text">
                             5 NUMBERS
                             <br />
@@ -54,56 +184,56 @@ export default function Rule() {
                         </span>
                     </td>
                     <td>
-                        <Ticket />
+                        <Ticket list={listBall[0]}/>
                     </td>
 
-                    <td class="prize">
+                    <td className="prize">
                         <span className="green-text">
                             $ 100,000
-                            <div class="star-img"></div>
+                            <div className="star-img"></div>
                         </span>
                     </td>
                 </tr>
-                <tr class="normal-prize">
-                    <td class="matches white-text">5 numbers</td>
+                <tr className="normal-prize">
+                    <td className="matches white-text">5 numbers</td>
                     <td>
-                        <Ticket />
+                        <Ticket list={listBall[1]}/>
                     </td>
-                    <td class="prize">$ 3,000</td>
+                    <td className="prize">$ 3,000</td>
                 </tr>
-                <tr class="normal-prize">
-                    <td class="matches white-text">4 numbers</td>
+                <tr className="normal-prize">
+                    <td className="matches white-text">4 numbers</td>
                     <td>
-                        <Ticket />
+                        <Ticket list={listBall[2]}/>
                     </td>
-                    <td class="prize">$ 20</td>
+                    <td className="prize">$ 20</td>
                 </tr>
-                <tr class="normal-prize">
-                    <td class="matches white-text">3 numbers</td>
+                <tr className="normal-prize">
+                    <td className="matches white-text">3 numbers</td>
                     <td>
-                        <Ticket />
+                        <Ticket list={listBall[3]}/>
                     </td>
-                    <td class="prize">$ 1</td>
+                    <td className="prize">$ 1</td>
                 </tr>
-                <tr class="normal-prize">
-                    <td class="matches white-text">2 numbers</td>
+                <tr className="normal-prize">
+                    <td className="matches white-text">2 numbers</td>
                     <td>
-                        <Ticket />
+                        <Ticket list={listBall[4]}/>
                     </td>
-                    <td class="prize">
-                        <img className="bonus" src="./assets/img/bonus.4dbbf756.png" alt="" />
+                    <td className="prize">
+                        <img className="bonus" src="/assets/img/bonus.4dbbf756.png" alt="" />
                         <span className="op-text">
                             +1 ticket
                         </span>
                     </td>
                 </tr>
-               <tr class="normal-prize">
-                    <td class="matches">1 numbers</td>
+               <tr className="normal-prize">
+                    <td className="matches">1 numbers</td>
                     <td>
-                        <Ticket />
+                        <Ticket list={listBall[5]}/>
                     </td>
-                    <td class="prize">
-                        <img className="bonus" src="./assets/img/bonus.4dbbf756.png" alt="" />
+                    <td className="prize">
+                        <img className="bonus" src="/assets/img/bonus.4dbbf756.png" alt="" />
                         <span className="op-text">
                             +1 ticket
                         </span>

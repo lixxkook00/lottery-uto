@@ -1,0 +1,28 @@
+.sv2fzdw {
+    padding: 2.5rem 0;
+    color: rgba(153,164,176,.6);
+    line-height: 1;
+    text-align: center;
+    height: 100%;
+    min-height: 16.25rem;
+    position: relative;
+}
+
+.sv2fzdw img {
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.sv2fzdw .msg {
+    position: absolute;
+    z-index: 1;
+    font-weight: 500;
+    line-height: 1.25rem;
+    left: 50%;
+    width: 17.5rem;
+    top: 55%;
+    margin-top: 3.75rem;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+}

@@ -1,0 +1,14 @@
+@import "../../../public/scss/_utils.scss";
+
+.my-ticket {
+    display: flex;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    .ui-button{
+        position: unset !important;
+        margin: 0;
+    }
+}

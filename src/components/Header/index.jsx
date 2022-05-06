@@ -5,7 +5,7 @@ export default function Header() {
     <div className="header">
       <div className="header-left">
           <div className="header-left-logo">
-            <img src="./assets/img/logo.b7a2c469.png" alt="" />
+            {/* <img src="./assets/img/logo.b7a2c469.png" alt="" /> */}
           </div>
           <div className="header-left-input">
             <input type="text" placeholder="Game name | Provider | Category Tag"/>

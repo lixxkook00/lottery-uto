@@ -1,0 +1,31 @@
+.ticket-win{
+    margin: 20px 0;
+    .vebodtg.win.draw{
+        width: 532px;
+        height: 56.5px;
+        background-image: url(../../../public/assets/img/jackpot_ball_banner.d504da09.png);
+
+        .numbers{
+            display: flex;
+            margin-left: 140px;
+        }
+
+        .ball{
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+        }
+
+        .ball:last-child{
+            margin-left: 20px;
+        }
+
+        .num{
+            color: #000;
+            position: relative;
+            z-index: 1;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+    }
+}

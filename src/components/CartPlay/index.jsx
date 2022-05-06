@@ -3,10 +3,10 @@ import './CartPlay.scss'
 
 export default function CartPlay({cart}) {
   return (
-    <div className="col-xl-4">
+    <div className="col-xl-4 mt-20">
         <div className="cart" style={{backgroundImage:cart.color}}>
             <div className="cart-img">
-                <img src={`./assets/img/${cart.img}`} alt="" />
+                <img src={`/assets/img/${cart.img}`} alt="" />
             </div>
             <div className="cart-tit">
                 {cart.title}

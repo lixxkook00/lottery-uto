@@ -1,26 +1,46 @@
+@import "./_variable.scss";
+
 .green-text{
-    color: $--primary-color;
+    color: $--primary-color !important;
     margin: 0 4px;
-    font-weight: 800;
-    font-style: italic;
+    font-weight: 800 !important;
+    font-style: italic !important;
 }
 
 .white-text{
     color: $--title-color;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0 4px;
 }
 
 .op-text{
-    color: #99a4b0;;
+    color: #99a4b0;
+    font-weight: 600;
 }
 
 .mb-40{
     margin-bottom: 40px;
 }
 
+.mb-20{
+    margin-bottom: 20px;
+}
+
 .mt-40{
     margin-top: 40px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.pl-10{
+    display: block;
+    padding-left: 20px;
+}
+
+.padding-14{
+    padding: 14px;
 }
 
 .sub-title{
@@ -32,3 +52,38 @@
     margin-bottom: 11px;
 }
 
+.ui-button {
+    background-color: #000;
+    width: 9.625rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 2.375rem;
+    margin: 0 auto;
+    background-color: var(--xlsp6o);
+    position: absolute;
+    top: 1.4375rem;
+    left: 50%;
+    margin-left: -4.8125rem;
+    background-color: rgba(78,85,99,.3);
+    color: rgba(153,164,176,.8);
+    transition: all .5s ease-in-out; 
+}
+
+.ui-button:hover{
+    background-color: $--primary-color;
+    color: #000;
+}
+
+.vovss2v{
+    height: 5.25rem;
+    padding: 1.4375rem 0 0.3125rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+}

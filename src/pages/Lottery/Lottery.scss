@@ -1,3 +1,5 @@
+@import '../../../public/scss/_utils.scss';
+
 .title{
     font-size: 1.25rem;
     line-height: 2.25rem;
@@ -7,4 +9,162 @@
     font-weight: 800;
     text-align: left;
     font-style: italic;
+}
+
+.tabs-navs {
+    width: 23.75rem;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 2.25rem;
+    position: relative;
+    border-radius: 1.125rem;
+    background-color: rgba(49,52,60,.7);
+    font-size: .875rem;
+    line-height: 1.6;
+    font-weight: 800;
+}
+
+.tabs-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+    color: rgba(153,164,176,.8);
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.tabs-nav.is-active {
+    color: #f5f6f7;
+    font-weight: 700;
+}
+
+.bg {
+    border-radius: 1.125rem;
+    background-image: linear-gradient(to left,#555966,#555966,#58ae14);
+    opacity: .4;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: right .2s ease-out,left .3s ease-out;
+    transition: right .2s ease-out,left .3s ease-out;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 0.3125rem rgb(0 0 0 / 14%);
+}
+
+.tabs-view {
+    background-color: #1e2024;
+    margin-top: 0.625rem;
+    border-radius: 1.25rem;
+    position: relative;
+    font-size: .875rem;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.right-wrap {
+    background-color: #18191c;
+    border-radius: 1.25rem;
+    width: 100%;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    padding: 1.25rem;
+    display: flex;
+}
+.g18qg53k{
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.balance {
+    height: 3rem;
+    background-color: #222428;
+    border: solid 1px #2d3035;
+    width: 11.25rem;
+    margin-top: 1.375rem;
+    padding: 0 1.25rem;
+    line-height: 3rem;
+    border-radius: 1.5rem;
+    color: #fff;
+}
+
+.btn {
+    width: 9.125rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #2c3138;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    margin-left: 0.75rem;
+    border-radius: 1.5rem;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: rgba(153,164,176,.8);
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn img {
+    width: 1.5625rem;
+    height: auto;
+    margin-right: 0.3125rem;
 }

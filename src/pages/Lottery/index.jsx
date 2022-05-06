@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 
 import './Lottery.scss'
 
@@ -6,6 +6,10 @@ import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import CartPlay from '../../components/CartPlay'
 import Rule from '../../components/Rule'
+import MyTicket from '../../components/MyTicket'
+import MyWinning from '../../components/MyWinning'
+import History from '../../components/History'
+import Footer from '../../components/Footer'
 
 const cartPlayList = [
   {
@@ -29,11 +33,29 @@ const cartPlayList = [
 ]
 
 export default function Lottery() {
+  const [idActive,setIdActive] = useState(0)
+
   return (
     <div className="container">
       <Header/>
 
       <Banner/>
+
+      {/* Control */}
+      <div className="tabs-scroll mt-40">
+        <div className="tabs-navs">
+            <button onClick={() => setIdActive(0)} className="tabs-nav">My Ticket (0)</button>
+            <button onClick={() => setIdActive(1)} className="tabs-nav">My Winnings</button>
+            <button onClick={() => setIdActive(2)} className="tabs-nav is-active">History</button>
+          <div className="bg" style={{left: `${idActive * 33.333}%`, right:`${(3-idActive-1) * 33.333}%`}}></div>
+        </div>
+      </div>
+
+      <div className="tabs-view mt-40">
+        {idActive === 0 && <MyTicket/>}
+        {idActive === 1 && <MyWinning/>}
+        {idActive === 2 && <History/>}
+      </div>
 
       {/* HOW TO PLAY */}
       <div className="title mt-40">
@@ -43,7 +65,7 @@ export default function Lottery() {
         {
           cartPlayList.map((cart,index) => {
             return (
-              <CartPlay cart={cart}/> 
+              <CartPlay key={index} cart={cart}/> 
             )
           })
         }
@@ -57,6 +79,52 @@ export default function Lottery() {
 
       <div className="lottery">
       </div>
+
+      {/* BCL */}
+      <div className="tabs-view">
+        <div className="row padding-14">
+          {/* left */}
+          <div className="col-xl-6">
+            {/* title */}
+              <div className="title">
+                What Is
+                <span className="green-text">
+                  BCL
+                </span>
+                ?
+              </div>
+            {/* content */}
+
+            <span className="op-text pl-10">
+              BCL (BC Lottery) is a token created by BC.GAME for players who love the Lottery. 
+              You can use BCL to redeem lottery tickets in the Lottery at any time, 1 BCL = 1 lottery ticket.
+            </span>
+
+            <a className="green-text pl-10">
+              Detail
+            </a>
+          </div>
+
+          {/* right */}
+          <div className="col-xl-6">
+            <div class="right-wrap">
+              <div class="g18qg53k">
+                  <div class="bcl-balance">
+                    <div class="label">Your BCL Balance:</div>
+                    <div class="balance">0</div>
+                  </div>
+                  <div class="btn swap">Get more BCL</div>
+                  <div class="btn">
+                    <img src="/assets/img/award.47749612.png" />
+                    Send Gift</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* footer */}
+      <Footer />
     </div>
   )
 }
