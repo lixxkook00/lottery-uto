@@ -1,5 +1,9 @@
 @import "./_variable.scss";
 
+.hidden{
+    display: none !important;
+}
+
 .green-text{
     color: $--primary-color !important;
     margin: 0 4px;

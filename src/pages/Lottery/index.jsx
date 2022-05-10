@@ -81,7 +81,7 @@ export default function Lottery() {
       </div>
 
       {/* BCL */}
-      <div className="tabs-view">
+      <div className="tabs-view hidden">
         <div className="row padding-14">
           {/* left */}
           <div className="col-xl-6">
